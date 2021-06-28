@@ -1,0 +1,112 @@
+body{
+	color:white;
+	overflow: hidden;
+	}
+.logo{
+	position:absolute;
+	width: 720px;
+	margin: auto;
+	top: 30%;
+    left: 10%;
+	z-index:2;
+	animation: float 3s ease-in-out infinite;
+}
+.bgg {
+    background: linear-gradient(269deg, #73ff97, #4fffda);
+    background-size: 400% 400%;
+
+    -webkit-animation: qbackground 15s ease infinite;
+    -moz-animation: qbackground 15s ease infinite;
+    animation: qbackground 15s ease infinite;
+}
+
+#buttonbox{
+    position:absolute;
+    left:0;
+	bottom: 25%;
+    right:0;
+    height:80px;
+    background:black;
+    color:white;
+	z-index:1;
+}
+.char {
+	position:absolute;
+	right: 0%;
+	top: -128px;
+}
+.button1 {
+	position: absolute;
+	height:56px;
+	bottom: 15%;
+	left: 100px;
+	transition: all .2s;
+}
+.button1:hover {
+        filter:drop-shadow(0 0 3px #fff);
+		transition: all .2s;
+		transform: translatey(-5px);
+}
+.button2:hover {
+        filter:drop-shadow(0 0 3px #fff);
+		transition: all .2s;
+		transform: translatey(-5px);
+}
+.button3:hover {
+        filter:drop-shadow(0 0 3px #fff);
+		transition: all .2s;
+		transform: translatey(-5px);
+}
+.button4:hover {
+        filter:drop-shadow(0 0 3px #fff);
+		transition: all .2s;
+		transform: translatey(-5px);
+}
+.button2 {
+	position: absolute;
+	height:56px;
+	bottom: 15%;
+	left: 350px;
+}
+.button3 {
+	position: absolute;
+	height:56px;
+	bottom: 15%;
+	left: 550px;
+}
+.button4 {
+	position: absolute;
+	height:56px;
+	bottom: 15%;
+	left: 765px;
+}
+@keyframes float {
+	0% {
+		filter: drop-shadow(5px 5px 5px rgba(0,0,0,0.6));
+		transform: translatey(0px);
+	}
+	50% {
+		filter: drop-shadow(20px 20px 5px rgba(0,0,0,0.2));
+		transform: translatey(-20px);
+	}
+	100% {
+		filter: drop-shadow(5px 5px 5px rgba(0,0,0,0.6));
+		transform: translatey(0px);
+	}
+}
+
+@-webkit-keyframes qbackground {
+    0%{background-position:0% 63%}
+    50%{background-position:100% 38%}
+    100%{background-position:0% 63%}
+}
+@-moz-keyframes qbackground {
+    0%{background-position:0% 63%}
+    50%{background-position:100% 38%}
+    100%{background-position:0% 63%}
+}
+@keyframes qbackground {
+    0%{background-position:0% 63%}
+    50%{background-position:100% 38%}
+    100%{background-position:0% 63%}
+}
