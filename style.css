@@ -80,17 +80,25 @@ body{
 	bottom: 15%;
 	left: 765px;
 }
+audio {
+    filter: invert(100%);
+    width: 280px;
+    height: 25px;
+	position: absolute;
+	bottom:35%;
+	right: 100px;
+}
 @keyframes float {
 	0% {
-		filter: drop-shadow(5px 5px 5px rgba(0,0,0,0.6));
+		filter: drop-shadow(5px 5px 5px rgba(0,0,0,0.2));
 		transform: translatey(0px);
 	}
 	50% {
-		filter: drop-shadow(20px 20px 5px rgba(0,0,0,0.2));
+		filter: drop-shadow(20px 20px 5px rgba(0,0,0,0.1));
 		transform: translatey(-20px);
 	}
 	100% {
-		filter: drop-shadow(5px 5px 5px rgba(0,0,0,0.6));
+		filter: drop-shadow(5px 5px 5px rgba(0,0,0,0.2));
 		transform: translatey(0px);
 	}
 }
